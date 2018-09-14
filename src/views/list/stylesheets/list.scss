@@ -1,0 +1,10 @@
+@import './mixin.scss';
+$color:green;
+.a{
+    color:$color;
+       @include border; 
+    .b{
+        color:darken($color,20);
+        @include border;
+    }
+}
